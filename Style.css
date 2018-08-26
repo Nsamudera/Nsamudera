@@ -1,10 +1,8 @@
 header {
   background-color: 	#a0d6b4;
-
 }
 
 body {
-  border: 15px solid #A9A9A9;
   background-color: #E5E4E2;
   margin: 0;
 }
@@ -46,24 +44,81 @@ li a:hover {
 
 }
 
-#banner {
-  background-image: url("Assets/Blank_Canvas_Only.png");
+#banner_home {
+  background-image: url("Assets/home_banner.png");
+  /*url http://avante.biz/wp-content/uploads/Dizain-wallpaper-hd/Dizain-wallpaper-hd-041.jpg*/
   background-size: cover;
   background-position: center;
-  width: 300px;
-  height:300px;
-  display: block;
+  height:550px;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+#banner_about {
+  background-image: url("Assets/about_banner.png");
+  /*url https://www.google.co.id/imgres?imgurl=http%3A%2F%2Fwww.hiddentalentartschool.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fblank-canvas1.jpg&imgrefurl=http%3A%2F%2Fwww.hiddentalentartschool.com%2Fbackground-with-blank-canvas-on-wooden-table%2F&docid=sobJLKQcU42NOM&tbnid=8yXKQ-SQMyLv1M%3A&vet=10ahUKEwiz3NfNyYrdAhWDwI8KHTIADDcQMwg6KAQwBA..i&w=1619&h=1174&safe=strict&bih=626&biw=1299&q=a%20blank%20canvas%20wallpapae&ved=0ahUKEwiz3NfNyYrdAhWDwI8KHTIADDcQMwg6KAQwBA&iact=mrc&uact=8*/
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  position: relative;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+
+#banner_wip {
+  background-image: url("Assets/wip_banner.png");
+  /*url https://www.google.co.id/imgres?imgurl=http%3A%2F%2Fwww.hiddentalentartschool.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fblank-canvas1.jpg&imgrefurl=http%3A%2F%2Fwww.hiddentalentartschool.com%2Fbackground-with-blank-canvas-on-wooden-table%2F&docid=sobJLKQcU42NOM&tbnid=8yXKQ-SQMyLv1M%3A&vet=10ahUKEwiz3NfNyYrdAhWDwI8KHTIADDcQMwg6KAQwBA..i&w=1619&h=1174&safe=strict&bih=626&biw=1299&q=a%20blank%20canvas%20wallpapae&ved=0ahUKEwiz3NfNyYrdAhWDwI8KHTIADDcQMwg6KAQwBA&iact=mrc&uact=8*/
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  position: relative;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+
+#banner_contact {
+  background-image: url("Assets/contact_banner.png");
+  /*url https://www.google.co.id/imgres?imgurl=http%3A%2F%2Felectionnaire.org%2Fwp-content%2Fuploads%2F2018%2F06%2Fcontact-us-icon.jpg&imgrefurl=http%3A%2F%2Felectionnaire.org%2Fcontact-us%2F&docid=MulzzZCwlZdFAM&tbnid=gu_18g-7k3Dq1M%3A&vet=10ahUKEwiKnszDzIrdAhUHso8KHcrrAGsQMwi9ASgSMBI..i&w=4253&h=2058&safe=strict&bih=626&biw=1299&q=contact%20us%20wallpaper&ved=0ahUKEwiKnszDzIrdAhUHso8KHcrrAGsQMwi9ASgSMBI&iact=mrc&uact=8#h=2058&imgdii=gu_18g-7k3Dq1M:&vet=10ahUKEwiKnszDzIrdAhUHso8KHcrrAGsQMwi9ASgSMBI..i&w=4253 */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  position: relative;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
 #banner .content h1 {
-  position: relative;
-  top: 100px;
-  margin: 0 auto;
   text-align: center;
+
+
 }
 
 #banner .content h4 {
@@ -77,14 +132,28 @@ li a:hover {
   text-align: center;
 }
 
+#Home h4{
+  font-weight: normal;
+}
+
+
+#home_btn img{
+  height: 80px;
+
+}
+
+#home_btn h5{
+  font-weight: 400;
+  font-family: Helvetica;
+}
+
+
 #title h2{
   text-align: left;
   padding-left: 5px;
 }
 
-#Home_content h4{
-  font-weight: normal;
-}
+
 
 #Content h4{
   font-weight: normal;
@@ -93,7 +162,7 @@ li a:hover {
   padding-left: 5px;
 }
 
-#Content .author_img {
+.author_img {
   float: left;
   width: 125px;
   margin-left: 15px;
@@ -105,8 +174,7 @@ li a:hover {
   opacity: 0.7;
 }
 
-
-.button {
+.nav_btm {
     border-top: 5px dotted #A9A9A9;
     padding: 40px 0px;
     margin-top: 10px;
@@ -116,7 +184,7 @@ li a:hover {
     display: inline-block;
   }
 
-.button a {
+.nav_btm a {
     background: #a0d6b4;
     border: 3px solid #a0d6b4;
     border-radius: 3px;
@@ -125,7 +193,7 @@ li a:hover {
     font-weight: bold;
   }
 
-.button a:hover {
+.nav_btm a:hover {
     background: white;
     border: 1px solid #20B2AA;
     color: #20B2AA;
